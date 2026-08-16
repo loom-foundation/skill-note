@@ -42,8 +42,9 @@ Run with `--help` for the full contract.
 
 ## Author a note
 
-Copy the nearest example from `resources/templates/` (a need, a requirement, a decision), follow the placeholder conventions in that directory's `README.md`, mint a fresh id, and validate.
+Write the envelope and body directly from `resources/docs/note-file.md`, mint a fresh id, and validate.
 Keep only the sections that carry substance.
+`resources/templates/` is empty until the method corpus defines the kinds worked examples would use.
 
 ## Load on demand
 
