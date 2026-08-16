@@ -29,15 +29,15 @@ A frontmatter field neither the format nor the note's kind defines is a warning,
 
 ## Body
 
-- Exactly one blank line separates the closing `---` from the lead.
-- The lead is unheaded: one statement of the note's substance, with no level-1 heading anywhere in the body, and the name never repeated as a heading.
-- Section headings are level 2. Each kind fixes their recommended order; a different order is never rejected while the sections the kind requires stand.
+The lead is unheaded: one statement of the note's substance, with no level-1 heading anywhere in the body, and the name never repeated as a heading.
+Section headings are level 2.
+Each kind fixes their recommended order; a different order is never rejected while the sections the kind requires stand.
 
 ## Relations
 
 Relations live in a `## Relations` body section; a relation's `{id=...}` attribute is the citation.
 Sweeps match a citation's namespace and opaque, never the path or the label, so a moved file or a stale label never hides a relation.
-The method fixes the section and the sweep; the line shape below is the practice its corpus exhibits, one list entry per relation, so follow it:
+The method fixes the section and the sweep; the line shape below is this corpus's own practice, one entry per relation, so follow it:
 
 ```
 - <verb>: [<name>](<relative path>){id=<id>}

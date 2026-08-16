@@ -1,11 +1,11 @@
 # Note Skill
 
-The note skill: the Note method distilled for AI agents, with scripts and templates.
+The note skill: the Note method distilled for AI agents, with scripts to mint and validate notes.
 `SKILL.md` is the front door; everything deeper is loaded on demand.
 
 - `SKILL.md`: the essential instructions, with pointers to everything below.
 - `resources/docs/`: the distilled references, covering identity, the note file, and the structural schema.
-- `resources/templates/`: worked example artefacts to copy from.
+- `resources/templates/`: empty until the method corpus defines the kinds worked examples would use.
 - `scripts/`: `mint.py` and `validate.py`, Python 3.9 standard-library command-line tools; each documents itself under `--help`.
 - `tests/`: the unittest suites.
 - `note/`: the skill's own note corpus, the intent behind it.
