@@ -1,4 +1,4 @@
-# skill-note
+# Note Skill
 
 The note skill: the Note method distilled for AI agents, with scripts and templates.
 `SKILL.md` is the front door; everything deeper is loaded on demand.
