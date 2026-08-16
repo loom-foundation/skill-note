@@ -1,5 +1,5 @@
 ---
-id: skillnote:req:wyse9c3
+id: note-skill:req:wyse9c3
 name: Every rule is one the method fixes
 kind: requirement
 status: current
@@ -10,4 +10,4 @@ The skill contradicts nothing that corpus states, and no script validates a rule
 
 ## Relations
 
-- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=skillnote:need:ae4has5}
+- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=note-skill:need:ae4has5}

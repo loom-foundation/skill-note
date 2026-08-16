@@ -1,6 +1,6 @@
 ---
 methodVersion: 0.9.0
-namespace: skillnote
+namespace: note-skill
 profile: standard
 layout: free
 draws:
@@ -11,4 +11,4 @@ draws:
 
 # Manifest
 
-The note skill's own corpus: the intent behind the skill at the repository root.
+Intent and specifications for the note skill.

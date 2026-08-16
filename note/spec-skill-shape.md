@@ -1,5 +1,5 @@
 ---
-id: skillnote:spec:fbr7v83
+id: note-skill:spec:fbr7v83
 name: The skill's shape
 kind: specification
 status: current
@@ -12,9 +12,9 @@ This specification fixes the repository's shape: what sits where, and what each 
 - `resources/templates/`: example artefacts, well-formed and best practice, that agents copy from.
 - `scripts/`: the codified common operations, `mint.py` and `validate.py`, each a command-line tool that documents itself under `--help`.
 - `tests/`: the scripts' unittest suites, run by one `./check` at the repository root.
-- `corpus/`: this corpus, the intent behind the skill.
+- `note/`: this corpus, the intent behind the skill.
 
 ## Relations
 
-- satisfies: [SKILL.md fits one read and defers](./req-progressive-disclosure.md){id=skillnote:req:vf0ave4}
-- satisfies: [Checked scripts on the standard library](./req-checked-tooling.md){id=skillnote:req:8pz0cz8}
+- satisfies: [SKILL.md fits one read and defers](./req-progressive-disclosure.md){id=note-skill:req:vf0ave4}
+- satisfies: [Checked scripts on the standard library](./req-checked-tooling.md){id=note-skill:req:8pz0cz8}
