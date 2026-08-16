@@ -5,4 +5,4 @@ kind: persona
 status: current
 ---
 
-An AI agent working a Note corpus mid-task, needing the method's rules and operations without the corpus that defines them in context.
+An AI agent working a Note corpus.

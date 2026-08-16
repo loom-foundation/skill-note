@@ -7,4 +7,4 @@ persona:
   - "[Note Agent](./pers-note-agent.md){id=skillnote:pers:73xc0m8}"
 ---
 
-An agent working a Note corpus applies the method's rules and executes its common operations, minting ids and validating notes, from the skill alone, without loading the whole method corpus or working from partial recall.
+An agent working a Note corpus understands how the method works, applies its rules, and executes its common operations (e.g. minting ids and validating notes) from the skill alone.

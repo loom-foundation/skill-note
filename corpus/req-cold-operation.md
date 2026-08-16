@@ -5,7 +5,7 @@ kind: requirement
 status: current
 ---
 
-Given the skill alone, with no other source in context, an agent mints a lawful id for a target corpus and validates a note file.
+Given the skill alone, with no other source in context, an agent understands how the method works, applies its rules, and successfully executes its common operations.
 
 ## Relations
 
