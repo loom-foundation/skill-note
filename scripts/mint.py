@@ -17,8 +17,6 @@ ALPHABET = "0123456789abcdefghjkmnpqrstvwxyz"
 DEFAULT_LENGTH = 7
 MAX_ATTEMPTS = 100
 
-SEGMENT_RE = re.compile(r"^[a-z]{2,5}$")
-
 
 def draw_opaque(length):
     """Draw one candidate opaque from the alphabet, securely."""
@@ -65,10 +63,9 @@ def check_namespace(namespace):
 
 def check_segment(segment):
     """Return an error message for an unlawful kind-segment, or None."""
-    if not SEGMENT_RE.match(segment):
+    if not (2 <= len(segment) <= 5 and segment == segment.lower()):
         return (
-            "segment must be lowercase letters, two to five characters: %r"
-            % segment
+            "segment must be lowercase, two to five characters: %r" % segment
         )
     return None
 

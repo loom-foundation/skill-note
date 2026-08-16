@@ -24,7 +24,7 @@ Never invent an opaque; draw one and prove it free:
 python3 scripts/mint.py --segment req path/to/corpus [other/repo ...]
 ```
 
-Pass every repository holding the namespace; the namespace is read from the first one's `manifest.md`.
+Pass every repository holding the namespace; it is read from the `namespace:` field in the YAML frontmatter of the first one's `manifest.md` (`namespace: garden`).
 `--segment` is the kind's abbreviation (`req` for a requirement); omit it to print a bare opaque.
 Run with `--help` for the full contract.
 

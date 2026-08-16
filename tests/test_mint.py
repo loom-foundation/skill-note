@@ -73,11 +73,12 @@ class NamespaceTest(unittest.TestCase):
 
 class SegmentTest(unittest.TestCase):
     def test_accepts_lawful_segments(self):
-        for segment in ("req", "spec", "need", "pers", "dg"):
+        # The schema fixes lowercase and two to five characters, no more.
+        for segment in ("req", "spec", "need", "pers", "dg", "re1", "re-q"):
             self.assertIsNone(mint.check_segment(segment))
 
     def test_rejects_unlawful_segments(self):
-        for segment in ("", "r", "toolong", "Req", "re1", "re-q"):
+        for segment in ("", "r", "toolong", "Req"):
             self.assertIsNotNone(mint.check_segment(segment))
 
 

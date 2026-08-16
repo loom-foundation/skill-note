@@ -15,7 +15,7 @@ The kind-segment between them is display, rendered from the note's `kind` field;
 
 | Segment | Rule |
 |---|---|
-| namespace | Declared once in the corpus's manifest. Short, lowercase, distinctive; it partitions the identity space, so distinct bodies of work take distinct namespaces. |
+| namespace | Declared once, as a `namespace:` field in the YAML frontmatter of the corpus's `manifest.md` (`namespace: garden`). Short, lowercase, distinctive; it partitions the identity space, so distinct bodies of work take distinct namespaces. |
 | kind-segment | An abbreviation rendered from the authoritative `kind` field. Every kind carries exactly one segment, shared with no other kind. |
 | opaque | Crockford Base32, lowercase: `0123456789abcdefghjkmnpqrstvwxyz` (`i`, `l`, `o`, `u` excluded). Compared case-insensitively. Unique within its namespace across every kind. |
 
@@ -41,6 +41,7 @@ Reopening a settled question is a new note with a new id.
 3. Assemble `<namespace>:<segment>:<opaque>`, the segment rendered from the note's `kind`.
 
 `scripts/mint.py` performs all three steps; run `python3 scripts/mint.py --help`.
+It reads the namespace from the `namespace:` frontmatter field of the target corpus's `manifest.md`, or takes `--namespace` where no manifest is in reach.
 
 ## Unknown kinds
 

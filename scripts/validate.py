@@ -17,7 +17,6 @@ ALPHABET = set("0123456789abcdefghjkmnpqrstvwxyz")
 
 REQUIRED_FIELDS = ("id", "name", "kind", "status")
 KIND_RE = re.compile(r"^[a-z]+(-[a-z]+)*$")
-SEGMENT_RE = re.compile(r"^[a-z]{2,5}$")
 KEY_RE = re.compile(r"^([^\s:#][^:]*):\s*(.*)$")
 HEADING_RE = re.compile(r"^(#{1,6})(?:\s+(.*?))?\s*#*\s*$")
 
@@ -105,10 +104,10 @@ def check_id(value, path, findings):
             "id opaque must be lowercase Crockford Base32 without i, l, o, u; "
             "unlawful characters %s in %r" % (", ".join(map(repr, bad)), opaque),
         ))
-    if not SEGMENT_RE.match(segment):
+    if not (2 <= len(segment) <= 5 and segment == segment.lower()):
         findings.append(Finding(
             path, WARNING,
-            "id kind-segment is a display defect: expected lowercase letters, "
+            "id kind-segment is a display defect: expected lowercase, "
             "two to five characters, got %r" % segment,
         ))
     return namespace, opaque

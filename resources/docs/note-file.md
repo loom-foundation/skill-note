@@ -35,14 +35,13 @@ A frontmatter field neither the format nor the note's kind defines is a warning,
 
 ## Relations
 
-Relations live in a `## Relations` body section, one list entry per relation:
+Relations live in a `## Relations` body section; a relation's `{id=...}` attribute is the citation.
+Sweeps match a citation's namespace and opaque, never the path or the label, so a moved file or a stale label never hides a relation.
+The method fixes the section and the sweep; the line shape below is the practice its corpus exhibits, one list entry per relation, so follow it:
 
 ```
 - <verb>: [<name>](<relative path>){id=<id>}
 ```
-
-The `{id=...}` attribute is the citation.
-Sweeps match its namespace and opaque, never the path or the label, so a moved file or a stale label never hides a relation.
 
 ## Well-formed
 
