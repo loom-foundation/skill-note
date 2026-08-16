@@ -81,6 +81,12 @@ class SegmentTest(unittest.TestCase):
         for segment in ("", "r", "toolong", "Req"):
             self.assertIsNotNone(mint.check_segment(segment))
 
+    def test_rejects_segments_breaking_the_id_grammar(self):
+        # A colon or whitespace cannot sit inside one of an id's three
+        # colon-separated segments; this guards the grammar, not the law.
+        for segment in ("ab:cd", "a b", "ab\tc"):
+            self.assertIsNotNone(mint.check_segment(segment))
+
 
 class CliTest(unittest.TestCase):
     def run_cli(self, *args):

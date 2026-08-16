@@ -63,6 +63,9 @@ def check_namespace(namespace):
 
 def check_segment(segment):
     """Return an error message for an unlawful kind-segment, or None."""
+    if ":" in segment or any(c.isspace() for c in segment):
+        # A guard for the three-segment id grammar, not segment law.
+        return "segment must not contain colons or whitespace: %r" % segment
     if not (2 <= len(segment) <= 5 and segment == segment.lower()):
         return (
             "segment must be lowercase, two to five characters: %r" % segment
