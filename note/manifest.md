@@ -1,6 +1,6 @@
 ---
 methodVersion: 0.9.0
-namespace: skillnote
+namespace: note-skill
 profile: standard
 layout: free
 draws:

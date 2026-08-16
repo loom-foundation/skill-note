@@ -1,5 +1,5 @@
 ---
-id: skillnote:req:vf0ave4
+id: note-skill:req:vf0ave4
 name: SKILL.md fits one read and defers
 kind: requirement
 status: current
@@ -10,4 +10,4 @@ The deeper material sits under `resources/` and `scripts/`, reached by progressi
 
 ## Relations
 
-- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=skillnote:need:ae4has5}
+- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=note-skill:need:ae4has5}

@@ -1,5 +1,5 @@
 ---
-id: skillnote:req:4xz5m50
+id: note-skill:req:4xz5m50
 name: Cold operation
 kind: requirement
 status: current
@@ -9,4 +9,4 @@ Given the skill alone, with no other source in context, an agent understands how
 
 ## Relations
 
-- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=skillnote:need:ae4has5}
+- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=note-skill:need:ae4has5}

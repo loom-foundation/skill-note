@@ -1,5 +1,5 @@
 ---
-id: skillnote:pers:73xc0m8
+id: note-skill:pers:73xc0m8
 name: Note Agent
 kind: persona
 status: current

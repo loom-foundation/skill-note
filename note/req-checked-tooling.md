@@ -1,5 +1,5 @@
 ---
-id: skillnote:req:8pz0cz8
+id: note-skill:req:8pz0cz8
 name: Checked scripts on the standard library
 kind: requirement
 status: current
@@ -10,4 +10,4 @@ Their tests are unittest, one `./check` at the repository root runs everything a
 
 ## Relations
 
-- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=skillnote:need:ae4has5}
+- addresses: [Operate a Note corpus from one guide](./need-distilled-guide.md){id=note-skill:need:ae4has5}
