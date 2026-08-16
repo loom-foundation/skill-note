@@ -9,7 +9,7 @@ This specification fixes the repository's shape: what sits where, and what each 
 
 - `SKILL.md`, at the root: the front door, frontmatter name and description tuned for triggering, then the essential instructions with pointers to everything below.
 - `resources/docs/`: the distilled explanation of how Note works, structured markdown covering identity, the note file envelope, and the structural schema.
-- `resources/templates/`: example artefacts, well-formed and best practice, that agents copy from.
+- `resources/templates/`: empty until the method corpus defines the kinds worked examples would use.
 - `scripts/`: the codified common operations, `mint.py` and `validate.py`, each a command-line tool that documents itself under `--help`.
 - `tests/`: the scripts' unittest suites, run by one `./check` at the repository root.
 - `note/`: this corpus, the intent behind the skill.
